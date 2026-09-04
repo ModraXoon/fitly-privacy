@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the Fitly Chrome extension">
+  <title>Fitly Privacy Policy</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b0f17;--panel:#131926;--line:#263247;--text:#e6edf7;--muted:#9aa9bd;--blue:#2da8ff;--amber:#fbbf24}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% 0,#121c2c 0,var(--bg) 42%);color:var(--text);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    main{width:min(880px,calc(100% - 32px));margin:48px auto;padding:40px;background:rgba(19,25,38,.94);border:1px solid var(--line);border-radius:24px;box-shadow:0 24px 80px rgba(0,0,0,.35)}
+    h1{font-size:2.2rem;margin:0 0 4px}h2{font-size:1.3rem;margin-top:36px;padding-top:24px;border-top:1px solid var(--line)}h3{font-size:1rem;color:#c9d8ea}.brand{color:var(--blue);font-weight:800;letter-spacing:.08em}.meta,.note{color:var(--muted)}.warning{border-left:4px solid var(--amber);background:#251d0b;padding:14px 18px;border-radius:10px}a{color:#78c7ff}code{background:#0a0e16;padding:.15em .4em;border-radius:5px}li{margin:.35rem 0}footer{margin-top:38px;color:var(--muted);font-size:.9rem}@media(max-width:600px){main{margin:16px auto;padding:24px}h1{font-size:1.75rem}}
+  </style>
+</head>
+<body>
+<main>
+  <div class="brand">FITLY</div>
+  <h1>Privacy Policy</h1>
+  <p class="meta"><strong>Effective date:</strong> September 2026 · <strong>Contact:</strong> <a href="mailto:contact@xoonex.dev">contact@xoonex.dev</a></p>
+
+  <h2>What Fitly does</h2>
+  <p>Fitly is a Chrome extension that analyzes job postings on supported sites (LinkedIn, Kariyer.net, and Indeed) and helps you compare job requirements with your CV. Fitly may prepare application form fields after an explicit user action, but it always stops before final submission.</p>
+
+  <h2>Data stored locally</h2>
+  <p>Fitly stores the following information on your device using Chrome's <code>chrome.storage.local</code> API:</p>
+  <ul>
+    <li>CV profiles and resume text that you enter.</li>
+    <li>Job posting text read from supported job-board pages.</li>
+    <li>Language, provider, consent, and analysis settings.</li>
+    <li>Application tracking entries.</li>
+    <li>An optional external-provider API key.</li>
+  </ul>
+  <p class="warning"><strong>API-key warning:</strong> Provider API keys are stored unencrypted in the extension's local browser storage. Chrome isolates extension storage from ordinary web pages and other extensions, but malware, developer tools, a compromised browser profile, or someone with access to your unlocked device may expose it. Use limited keys and rotate them regularly.</p>
+
+  <h2>Optional external AI providers</h2>
+  <p>Fitly has no Fitly-operated backend, analytics endpoint, advertising endpoint, or telemetry service. By default, local heuristic analysis does not send CV or job text to an AI provider.</p>
+  <p>If you explicitly select Groq, Google Gemini, or OpenAI and grant provider-bound consent, Fitly sends the following directly from your browser to that selected provider for analysis:</p>
+  <ul><li>Your CV text.</li><li>The current job description.</li><li>Your IP address as part of the HTTPS connection.</li><li>Your provider API credential for authentication.</li></ul>
+  <p>The transfer occurs only after provider selection, explicit consent, and an analysis request. Provider handling is governed by the provider's policy: <a href="https://groq.com/privacy-policy/">Groq</a>, <a href="https://ai.google.dev/terms">Google Gemini API</a>, or <a href="https://openai.com/privacy/">OpenAI</a>.</p>
+
+  <h2>What Fitly does not do</h2>
+  <ul>
+    <li>Fitly does not sell user data.</li>
+    <li>Fitly does not use analytics, tracking pixels, advertising, or telemetry.</li>
+    <li>Fitly does not access browsing history outside supported job-board pages.</li>
+    <li>Fitly does not automatically submit job applications.</li>
+  </ul>
+
+  <h2>Application preparation</h2>
+  <p>After an explicit user action, Fitly may pre-fill application fields and advance supported multi-step forms. It stops before the final submission control so you can review and submit the application yourself.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>Local data remains in your browser profile until you remove it. You can delete individual CVs and tracking entries in Fitly, clear a stored API key in Settings and save, clear extension storage in Chrome, or uninstall Fitly to remove its local data.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><code>sidePanel</code>: displays Fitly beside the current page.</li>
+    <li><code>storage</code>: stores CVs, settings, consent state, credentials, and tracking data locally.</li>
+    <li><code>activeTab</code> and job-board host access: read supported job postings and, only after an explicit action, prepare form fields for review.</li>
+    <li>AI-provider host access: sends an analysis request only to the provider you select and approve.</li>
+  </ul>
+
+  <h2>Children's privacy</h2>
+  <p>Fitly is not directed to children under 13 and does not knowingly collect information from children.</p>
+
+  <h2>Changes and contact</h2>
+  <p>Material changes will be published on this page with an updated effective date. For privacy questions or deletion assistance, email <a href="mailto:contact@xoonex.dev">contact@xoonex.dev</a>.</p>
+
+  <footer>Fitly · Privacy policy hosted as a public, version-controlled document.</footer>
+</main>
+</body>
+</html>
