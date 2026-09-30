@@ -16,7 +16,7 @@
 <main>
   <div class="brand">FITLY</div>
   <h1>Privacy Policy</h1>
-  <p class="meta"><strong>Updated:</strong> September 29, 2026 · <strong>Contact:</strong> <a href="mailto:contact@xoonex.dev">contact@xoonex.dev</a></p>
+  <p class="meta"><strong>Updated:</strong> September 30, 2026 · <strong>Contact:</strong> <a href="mailto:contact@xoonex.dev">contact@xoonex.dev</a></p>
 
   <h2>What Fitly does</h2>
   <p>Fitly is a Chrome extension that reads job postings on supported sites (LinkedIn, Kariyer.net, and Indeed) and compares detected job keywords with your CV. Local keyword coverage is not an ATS pass prediction or a hiring probability. You can edit and copy application-answer drafts for manual entry. Form-field automation is disabled in this release pending real-browser safety checks.</p>
@@ -25,11 +25,12 @@
   <p>Fitly stores the following information on your device using Chrome's <code>chrome.storage.local</code> API:</p>
   <ul>
     <li>CV profiles and resume text that you enter.</li>
-    <li>Job posting text read from supported job-board pages.</li>
+    <li>Job title, company, URL, and draft snippets only for tracking entries you create.</li>
     <li>Language, provider, consent, and analysis settings.</li>
     <li>Application tracking entries.</li>
     <li>An optional external-provider API key.</li>
   </ul>
+  <p>The current job description is held in memory while the panel is open and is not persistently stored by Fitly. A tracking entry you create saves the job title, company, URL, and generated draft snippets, but not the full job description.</p>
   <p class="warning"><strong>API-key warning:</strong> Provider API keys are stored unencrypted in the extension's local browser storage. Chrome isolates extension storage from ordinary web pages and other extensions, but malware, developer tools, a compromised browser profile, or someone with access to your unlocked device may expose it. Use limited keys and rotate them regularly.</p>
 
   <h2>Optional external AI providers</h2>
